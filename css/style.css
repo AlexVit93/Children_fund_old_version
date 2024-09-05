@@ -29,15 +29,22 @@ html {
   padding: 20px;
   background-color: #f8f9fa;
   min-height: 156px;
+  width: 100%;
 }
 
 .header_menu {
   display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.container .wrapper {
+  width: 100%;
 }
 
 .header_menu_nav {
   display: flex;
-  gap: 25px;
+  gap: 50px;
 }
 
 .header_menu_link {
@@ -50,11 +57,13 @@ html {
   text-align: center;
   color: #716d6e;
   white-space: nowrap;
+  border-bottom: 2px solid transparent;
 }
 
 .header_menu_link.active {
   text-decoration: none;
   color: #01a0e2;
+  border-bottom: 2px solid #01a0e2;
 }
 .header_menu_link:hover {
   color: #01a0e2;
@@ -64,6 +73,8 @@ html {
 .header_button {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  margin-left: 20px;
 }
 .header_button .btn-primary {
   display: inline-block;
