@@ -16,7 +16,7 @@ html {
   max-width: 1920px;
 }
 
-.wrapper {
+.container .wrapper {
   max-width: 1920px;
   margin: 0 auto;
   padding: 0 15px;
@@ -35,16 +35,15 @@ html {
 .header_menu {
   display: flex;
   justify-content: space-between;
-  flex: 1;
-}
-
-.container .wrapper {
-  width: 100%;
+  flex-grow: 1;
+  margin-right: 20px;
 }
 
 .header_menu_nav {
   display: flex;
-  gap: 50px;
+  justify-content: space-between;
+  gap: 30px;
+  flex-grow: 1;
 }
 
 .header_menu_link {
@@ -74,7 +73,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 .header_button .btn-primary {
   display: inline-block;
