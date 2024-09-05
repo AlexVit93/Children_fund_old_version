@@ -37,7 +37,7 @@ html {
 
 .header_menu_nav {
   display: flex;
-  gap: 38px;
+  gap: 25px;
 }
 
 .header_menu_link {
@@ -45,7 +45,7 @@ html {
   transition: color 0.3s ease, border-bottom 0.3s ease;
   font-family: var(--font-family);
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 120%;
   text-align: center;
   color: #716d6e;
@@ -66,15 +66,6 @@ html {
   align-items: center;
 }
 .header_button .btn-primary {
-  /* display: inline-block;
-  background: linear-gradient(45deg, #01a0e2 100%, #838383);
-  color: #fff;
-  padding: 12px 55px;
-  border-radius: 19.58px;
-  text-decoration: none;
-  font-weight: normal;
-  box-shadow: 0 5.26px 5.26px rgba(0, 0, 0, 0.1);
-  transition: background 0.3s ease; */
   display: inline-block;
   background-image: url("../img/button_click_help.png");
   background-size: cover;
@@ -85,14 +76,19 @@ html {
   height: 58px;
   border-radius: 19.58px;
   text-decoration: none;
-  font-weight: normal;
-  box-shadow: none;
+  font-family: var(--secondary);
+  font-weight: 600;
   text-align: center;
+  font-size: 16px;
 }
 
-/* .header_button .btn-primary:hover {
-  background: linear-gradient(45deg, #838383, #01a0e2);
-} */
+.header_button .btn-primary:hover {
+  cursor: pointer;
+}
+
+.header_button .btn-primary:active {
+  transform: scale(0.98);
+}
 
 .main_area {
   position: relative;
@@ -128,6 +124,9 @@ html {
   display: flex;
   margin-bottom: 38px;
   gap: 12px;
+  font-family: var(--secondary);
+  font-size: 16px;
+  font-weight: 600;
 }
 .main_search_bar {
   flex: 0;
@@ -147,20 +146,34 @@ html {
 .main_search_bar .form-control:hover {
   box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.25);
 }
+.main_search_button .btn-primary:active {
+  transform: scale(0.98);
+}
 
 .main_search_button .btn-primary {
-  width: 92px;
+  /* width: 92px;
   height: 35px;
   border-radius: 10px;
   border: 1.34px #f8f8f8;
   background: linear-gradient(45deg, #01a0e2, #0284d0);
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
-  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out; */
+  display: inline-block;
+  background-image: url("../img/button_search.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 92px;
+  height: 35px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  border: 1px #fff;
 }
 
 .main_search_button .btn-primary:hover {
-  background: linear-gradient(45deg, #0284d0, #01a0e2);
-  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 .main_content {
@@ -170,9 +183,11 @@ html {
 }
 
 .main_title_text {
-  font-size: 1.8em;
-  font-weight: bold;
+  font-size: 40px;
   margin-bottom: 54px;
+  font-family: var(--font-family);
+  font-weight: 800;
+  white-space: nowrap;
 }
 
 .main_subcontent {
@@ -181,20 +196,24 @@ html {
 }
 
 .main_subtitle {
-  font-size: 1.1em;
+  font-size: 24px;
   font-weight: bold;
   margin-top: 54px;
+  font-family: var(--font-family);
 }
 
 .list_help {
   list-style-type: disc;
   padding-left: 20px;
   margin-top: 15px;
+  font-weight: bold;
 }
 
 .list_title {
-  font-size: 1em;
   margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: var(--font-family);
 }
 
 .footer {
@@ -211,10 +230,12 @@ html {
 
 .footer_title,
 .footer_text_one {
-  font-size: 1.1em;
+  font-size: 16px;
   line-height: 1.5em;
   color: #716d6e;
   margin-bottom: 2rem;
+  font-family: var(--font-family);
+  font-weight: bold;
 }
 
 .footer_banner_box {
@@ -245,10 +266,13 @@ html {
 
 .footer_text_two,
 .footer_text_three {
-  font-size: 0.75em;
+  font-size: 11px;
   line-height: 1.5em;
   word-spacing: 2px;
   color: #716d6e;
+  font-family: var(--font-family);
+  font-weight: bold;
+  white-space: nowrap;
 }
 
 @media (max-width: 768px) {
