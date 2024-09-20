@@ -128,7 +128,7 @@ html {
   padding: 20px;
   color: var(--color);
   margin-bottom: 3rem;
-  min-height: 600px;
+  min-height: fit-content;
 }
 
 .main_area::before {
@@ -208,6 +208,12 @@ html {
   white-space: nowrap;
 }
 
+.main_title_pages {
+  font-size: 54px;
+  font-family: var(--font-family);
+  color: var(--link-color);
+}
+
 .main_subcontent {
   color: var(--color);
   text-align: left;
@@ -218,6 +224,10 @@ html {
   font-weight: bold;
   margin-top: 54px;
   font-family: var(--font-family);
+}
+
+.hr_line {
+  background-color: var(--link-color);
 }
 
 .list_help {
