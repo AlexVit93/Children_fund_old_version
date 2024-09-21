@@ -120,6 +120,8 @@ html {
 }
 
 .main_area_anypages {
+  margin: 0 !important;
+  padding: 0 !important;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -129,6 +131,13 @@ html {
   color: var(--color);
   margin-bottom: 3rem;
   min-height: fit-content;
+}
+
+.main_area_anypages .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 2rem;
 }
 
 .main_area::before {
@@ -209,9 +218,10 @@ html {
 }
 
 .main_title_pages {
-  font-size: 54px;
+  font-size: 40px;
   font-family: var(--font-family);
   color: var(--link-color);
+  font-weight: 800;
 }
 
 .main_subcontent {
@@ -226,8 +236,26 @@ html {
   font-family: var(--font-family);
 }
 
+.main_subtitle_pages {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 54px;
+  font-family: var(--font-family);
+  color: var(--link-color);
+}
+
+.main_text_pages {
+  font-size: 1.2em;
+  font-family: var(--font-family);
+  color: var(--link-color);
+  white-space: nowrap;
+}
+
 .hr_line {
   background-color: var(--link-color);
+  border: 1.5px solid;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .list_help {
