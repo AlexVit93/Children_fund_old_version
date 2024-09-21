@@ -106,6 +106,8 @@ html {
 }
 
 .main_area {
+  margin: 0 !important;
+  padding: 0 !important;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -248,14 +250,6 @@ html {
   font-size: 1.2em;
   font-family: var(--font-family);
   color: var(--link-color);
-  white-space: nowrap;
-}
-
-.hr_line {
-  background-color: var(--link-color);
-  border: 1.5px solid;
-  margin: 0 !important;
-  padding: 0 !important;
 }
 
 .list_help {
@@ -272,9 +266,101 @@ html {
   font-family: var(--font-family);
 }
 
+.help_text_pages {
+  font-size: 1.2em;
+  font-family: var(--font-family);
+  color: var(--link-color);
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.about_text_pages {
+  font-size: 23.06px;
+  font-family: var(--font-family);
+  color: var(--link-color);
+  font-weight: 400;
+  line-height: 34.59px;
+}
+
+.hr_line {
+  background-color: var(--link-color);
+  border: 1.5px solid;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.history-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  padding-top: 20px;
+  align-items: center;
+}
+
+.history-item:nth-child(odd) {
+  grid-column: 1;
+}
+
+.history-item:nth-child(even) {
+  grid-column: 2;
+}
+
+.history-item {
+  background-color: var(--background);
+  color: var(--link-color);
+  padding: 10px 0;
+}
+
+.photo-gallery {
+  margin-top: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  margin-bottom: 30px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.album-cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 200px;
+  background-color: var(--background);
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.album-cover img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.album-cover:hover img {
+  transform: scale(1.1);
+}
+
+.album-title {
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--link-color);
+  margin-top: 10px;
+  padding: 0 10px;
+  text-overflow: ellipsis;
+}
+
 .footer {
   background-color: var(--background-color);
   padding: 20px 0;
+}
+
+.footer .wrapper {
+  margin-top: 4em;
 }
 
 .footer .grid {
@@ -332,10 +418,19 @@ html {
 }
 
 @media (max-width: 768px) {
+  .gallery-item {
+    margin-bottom: 20px;
+  }
   .footer .grid {
     grid-template-columns: 1fr;
   }
   .footer_banner_box {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery-item {
+    margin-bottom: 15px;
   }
 }
