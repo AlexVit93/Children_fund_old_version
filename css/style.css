@@ -32,7 +32,7 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: var(--background-color);
+  background-color: var(--background);
   min-height: 156px;
   width: 100%;
 }
@@ -172,9 +172,9 @@ html {
 }
 
 .main_search_bar .form-control {
-  width: 169px;
+  width: 280px;
   height: 35px;
-  border-radius: 10px;
+  border-radius: 15px;
   background: var(--background);
   border: 1px solid var(--background);
   opacity: 0.6;
@@ -187,9 +187,9 @@ html {
   background-image: url("../img/button_search.png");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 92px;
+  width: 95px;
   height: 35px;
-  border-radius: 10px;
+  border-radius: 15px;
   text-align: center;
   color: var(--color);
   font-weight: 500;
@@ -359,49 +359,6 @@ html {
   height: 3.5em;
 }
 
-/* .photo-gallery {
-  margin-top: 20px;
-}
-
-.gallery-item {
-  position: relative;
-  margin-bottom: 30px;
-  overflow: hidden;
-  text-align: center;
-}
-
-.album-cover {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  height: 200px;
-  background-color: var(--background);
-  overflow: hidden;
-  margin-bottom: 10px;
-}
-
-.album-cover img {
-  max-width: 100%;
-  max-height: 100%;
-  transition: transform 0.3s ease;
-}
-
-.album-cover:hover img {
-  transform: scale(1.1);
-}
-
-.album-title {
-  text-align: center;
-  font-family: var(--font-family);
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--link-color);
-  margin-top: 10px;
-  padding: 0 10px;
-  text-overflow: ellipsis;
-} */
-
 .card {
   position: relative;
   display: flex;
@@ -475,7 +432,8 @@ html {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-  gap: 2rem;
+  gap: 2em;
+  align-items: end;
 }
 
 .footer_title,
@@ -491,16 +449,16 @@ html {
 .footer_banner_box {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
+  gap: 6em;
 }
 
 .footer_banner_box img {
-  max-width: 300px;
-  height: auto;
+  max-width: 255px;
 }
 
 .photo_fund {
-  width: 373px;
+  width: 300px;
   height: auto;
 }
 
@@ -510,19 +468,21 @@ html {
 }
 
 .footer_textbox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-content: stretch;
   text-align: justify;
-  margin: -3em auto 0;
 }
 
 .footer_text_two,
 .footer_text_three {
-  font-size: 11px;
+  font-size: 10.5px;
   line-height: 1.5em;
   word-spacing: 2px;
   color: var(--link-color);
   font-family: var(--font-family);
   font-weight: bold;
-  white-space: nowrap;
 }
 
 @media (max-width: 768px) {
