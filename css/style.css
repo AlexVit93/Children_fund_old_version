@@ -359,12 +359,14 @@ html {
   position: relative;
   display: flex;
   flex-direction: column;
+  gap: 30px;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: transparent !important;
   background-clip: border-box;
-  border: none;
-  border-radius: 0.25rem;
+  border: none !important;
+  --bs-card-inner-border-radius: 0 !important;
+  height: 100%;
 }
 
 .card-body {
@@ -373,13 +375,25 @@ html {
 }
 
 .card-title {
-  margin-bottom: 0.75rem !important;
+  margin-bottom: 3em !important;
+  height: 60px;
   font-family: var(--font-family);
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 700;
-  line-height: 39px;
+  line-height: 30px;
   text-align: center;
   color: var(--link-color) !important;
+  text-transform: uppercase;
+}
+
+.card-text {
+  margin-top: 3em;
+  text-align: justify;
+  max-width: 100%;
+  line-height: 1.6;
+  color: var(--link-color);
+  font-family: var(--font-family);
+  font-size: 13px;
 }
 
 .card-text:last-child {
