@@ -32,7 +32,7 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: var(--background);
+  background-color: var(--background-color);
   min-height: 156px;
   width: 100%;
 }
