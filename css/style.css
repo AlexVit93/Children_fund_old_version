@@ -516,6 +516,13 @@ html {
     margin: 0 auto;
   }
 
+  .main_area {
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 400px;
+  }
+
   .main_title_text {
     font-size: 24px;
     margin-bottom: 20px;
@@ -635,6 +642,12 @@ html {
     width: 100% !important;
     justify-content: center !important;
     margin-top: 15px !important;
+  }
+
+  .main_area {
+    background-position: center top;
+    background-repeat: no-repeat;
+    min-height: 500px;
   }
 
   .main_title_text {
