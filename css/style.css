@@ -18,11 +18,10 @@ html {
   font-family: var(--font-family);
   font-size: 14px;
   width: 100%;
-  max-width: 1920px;
 }
 
 .container .wrapper {
-  max-width: 1920px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -38,6 +37,7 @@ html {
 }
 
 .header_menu {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   flex-grow: 1;
@@ -47,6 +47,7 @@ html {
 .header_menu_nav {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 30px;
   flex-grow: 1;
 }
@@ -61,6 +62,8 @@ html {
   text-align: center;
   color: var(--link-color);
   white-space: nowrap;
+  flex: 1 1 auto;
+  min-width: 100px;
   border-bottom: 2px solid transparent;
 }
 
@@ -77,8 +80,8 @@ html {
 .header_button {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  margin-left: 40px;
+  justify-content: center;
+  margin-top: 15px;
 }
 .header_button .btn-primary {
   display: inline-block;
@@ -224,7 +227,7 @@ html {
   font-family: var(--font-family);
   color: var(--link-color);
   font-weight: 800;
-  margin-bottom: 1em;
+  margin: 1em 0;
 }
 
 .main_subcontent {
@@ -296,6 +299,7 @@ html {
   gap: 40px;
   padding-top: 20px;
   align-items: center;
+  margin: 0 0 5em 0;
 }
 
 .history-item:nth-child(odd) {
@@ -486,19 +490,317 @@ html {
 }
 
 @media (max-width: 768px) {
-  .gallery-item {
+  .container .wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .header_menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header_menu_nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .header_button {
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .main_title_text {
+    font-size: 24px;
+    margin-bottom: 20px;
+    white-space: normal;
+  }
+
+  .main_subtitle {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .list_title {
+    font-size: 16px;
+  }
+  .main_search_box {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    gap: 10px;
+  }
+
+  .main_search_bar .form-control {
+    width: 200px;
+    height: 37px;
+  }
+
+  .main_search_button .btn-primary {
+    margin-bottom: 12px;
+    width: 100px;
+    height: 35px;
+  }
+
+  .adaptive_one {
+    display: block;
+  }
+
+  .adaptive_two {
+    width: 100%;
     margin-bottom: 20px;
   }
+
+  .help_text_pages {
+    white-space: normal;
+    font-size: 1em;
+  }
+
+  .history-grid {
+    gap: 20px;
+  }
+
+  .about_text_pages {
+    font-size: 14px;
+    line-height: 1.4em;
+    text-align: left;
+  }
+
+  .history-image-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .history-image-box img {
+    width: 90%;
+    height: auto;
+  }
+
   .footer .grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
+
+  .footer_title,
+  .footer_text_one {
+    text-align: center;
+  }
+
   .footer_banner_box {
     flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+  }
+
+  .footer_textbox {
+    align-items: center;
+    text-align: justify;
+  }
+
+  .photo_fund,
+  .photo_unisef {
+    width: 100%;
+    max-width: 200px;
   }
 }
 
-@media (max-width: 576px) {
-  .gallery-item {
-    margin-bottom: 15px;
+@media (min-width: 768px) and (max-width: 1199px) {
+  .container .wrapper {
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 15px !important;
+  }
+
+  .header_menu {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .header_menu_nav {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 30px !important;
+  }
+
+  .header_button {
+    width: 100% !important;
+    justify-content: center !important;
+    margin-top: 15px !important;
+  }
+
+  .main_title_text {
+    font-size: 32px;
+    margin-bottom: 40px;
+    white-space: normal;
+  }
+
+  .main_subtitle {
+    font-size: 20px;
+    margin-top: 40px;
+  }
+
+  .list_title {
+    font-size: 18px;
+  }
+
+  .adaptive_one {
+    display: block;
+  }
+
+  .adaptive_two {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .help_text_pages {
+    white-space: normal;
+    font-size: 1em;
+  }
+
+  .news-adaptive-one .news-adaptive-two {
+    width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .card-text {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .history-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .about_text_pages {
+    font-size: 16px;
+  }
+
+  .history-image-box img {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer .grid {
+    grid-template-columns: 1fr;
+    gap: 1em;
+  }
+
+  .footer_title,
+  .footer_text_one {
+    text-align: center;
+  }
+
+  .footer_banner_box {
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+  }
+
+  .footer_textbox {
+    align-items: center;
+    text-align: justify;
+  }
+
+  .photo_fund,
+  .photo_unisef {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header_menu_nav {
+    flex-direction: row !important;
+    gap: 20px !important;
+    justify-content: space-between;
+  }
+
+  .header_button {
+    width: auto !important;
+    justify-content: flex-end !important;
+    margin-left: 40px !important;
+    margin-top: 0 auto;
+  }
+
+  .header_menu_link {
+    min-width: auto;
+    flex: 1 1 auto;
+  }
+
+  .main_title_text {
+    font-size: 40px;
+    margin-bottom: 54px;
+  }
+
+  .main_subtitle {
+    font-size: 24px;
+    margin-top: 54px;
+  }
+
+  .list_title {
+    font-size: 20px;
+  }
+
+  .main_search_bar .form-control {
+    width: 280px;
+  }
+
+  .main_search_button .btn-primary {
+    width: 95px;
+    height: 35px;
+  }
+
+  .history-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .about_text_pages {
+    font-size: 18px;
+  }
+
+  .history-image-box img {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+  }
+
+  .footer_banner_box {
+    gap: 6em;
+    justify-content: space-between;
+  }
+
+  .footer_textbox {
+    align-items: flex-end;
+    text-align: justify;
+  }
+
+  .photo_fund {
+    width: 300px;
+  }
+
+  .photo_unisef {
+    width: 265px;
   }
 }

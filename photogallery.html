@@ -4,31 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Белорусский детский фонд - Фотогалерея</title>
-    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header class="header bg-light py-3">
       <div class="container wrapper">
         <div
-          class="header_menu d-flex justify-content-between align-items-center"
+          class="header_menu d-flex flex-column flex-md-row justify-content-between align-items-center"
         >
-          <nav class="header_menu_nav d-flex">
-            <a href="index.html" class="header_menu_link me-3">Главная</a>
-            <a href="help.html" class="header_menu_link me-3">Адреса помощи</a>
-            <a href="news.html" class="header_menu_link me-3">Новости</a>
-            <a href="photogallery.html" class="header_menu_link me-3 active"
+          <nav class="header_menu_nav d-flex flex-column flex-md-row">
+            <a
+              href="index.html"
+              class="header_menu_link mb-2 mb-md-0 me-md-3 active"
+              >Главная</a
+            >
+            <a href="help.html" class="header_menu_link mb-2 mb-md-0 me-md-3"
+              >Адреса помощи</a
+            >
+            <a href="news.html" class="header_menu_link mb-2 mb-md-0 me-md-3"
+              >Новости</a
+            >
+            <a
+              href="photogallery.html"
+              class="header_menu_link mb-2 mb-md-0 me-md-3"
               >Фотогалерея</a
             >
-            <a href="about.html" class="header_menu_link me-3">О Фонде</a>
-            <a href="#" class="header_menu_link">Ресурсы для специалистов</a>
+            <a href="about.html" class="header_menu_link mb-2 mb-md-0 me-md-3"
+              >О Фонде</a
+            >
+            <a href="#" class="header_menu_link mb-2 mb-md-0"
+              >Ресурсы для специалистов</a
+            >
           </nav>
-          <div class="header_button">
+          <div class="header_button mt-3 mt-md-0">
             <a href="help.html" class="btn-primary">Получить помощь</a>
           </div>
         </div>
